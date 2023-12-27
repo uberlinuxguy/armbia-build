@@ -31,8 +31,8 @@ function post_family_tweaks__add_cpi_user(){
 	chroot_sdcard adduser cpi
 	chroot_sdcard groupadd cpifav -g 31415
 	chroot_sdcard adduser cpi cpifav
-	chroot_sdcard gropumod -a -U cpi tty
-	chroot_sdcard gropumod -a -U cpi video
+	chroot_sdcard groupmod -a -U cpi tty
+	chroot_sdcard groupmod -a -U cpi video
 	chroot_sdcard mkdir -p /home/cpi
 	chroot_sdcard chown cpi /home/cpi
 }
