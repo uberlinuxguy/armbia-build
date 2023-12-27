@@ -98,7 +98,7 @@ index be872eefa61e..ca5f4e43476b 100644
  static const DECLARE_TLV_DB_SCALE(sun8i_codec_hp_vol_scale, -6300, 100, 1);
  static const struct snd_kcontrol_new sun8i_codec_headphone_controls[] = {
 -	SOC_SINGLE_TLV("Headphone Playback Volume",
-+	SOC_SINGLE_TLV("Playback Volume",
++	SOC_SINGLE_TLV("Master Playback Volume",
  		       SUN8I_ADDA_HP_VOLC,
  		       SUN8I_ADDA_HP_VOLC_HP_VOL, 0x3f, 0,
  		       sun8i_codec_hp_vol_scale),
