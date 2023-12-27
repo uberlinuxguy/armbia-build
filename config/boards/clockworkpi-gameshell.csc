@@ -46,7 +46,7 @@ function post_family_tweaks__add_golang_and_git(){
 function post_family_tweaks__grab_cpi_launchergo(){
 	display_alert "$BOARD" "Install and configure cpi launchergo" "info"
 	do_with_retries 3 chroot_sdcard_apt_get_update
-	chroot_sdcard_apt_get_install xinit twm xserver-xorg-legacy
+	chroot_sdcard_apt_get_install xinit twm xserver-xorg-legacy libsdl2-ttf-2.0-0 aria2 libsdl2-gfx-1.0-0 libsdl2-image-2.0-0 retroarch
 	chroot_sdcard mkdir -p /home/cpi/apps/emulators
 	chroot_sdcard mkdir -p /home/cpi/games
 	chroot_sdcard mkdir -p /home/cpi/music
