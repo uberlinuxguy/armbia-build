@@ -31,7 +31,7 @@ index 092eb59a7d32..00ab1f315f6b 100644
  static inline struct gpio_led_data *
  			cdev_to_gpio_led_data(struct led_classdev *led_cdev)
  {
-@@ -119,6 +121,8 @@ static int create_gpio_led(const struct gpio_led *template,
+@@ -119,6 +121,8 @@ static i	nt create_gpio_led(const struct gpio_led *template,
  						     &init_data);
  	}
  
@@ -57,7 +57,7 @@ index 092eb59a7d32..00ab1f315f6b 100644
  	return priv;
  }
  
-@@ -307,6 +314,82 @@ static struct platform_driver gpio_led_driver = {
+@@ -307,6 +314,83 @@ static struct platform_driver gpio_led_driver = {
  
  module_platform_driver(gpio_led_driver);
  
@@ -65,6 +65,7 @@ index 092eb59a7d32..00ab1f315f6b 100644
 +
 +#include <linux/proc_fs.h>
 +#include <linux/uaccess.h>
++#include <linux/seq_file.h>
 +
 +static char global_buffer[64];
 +
