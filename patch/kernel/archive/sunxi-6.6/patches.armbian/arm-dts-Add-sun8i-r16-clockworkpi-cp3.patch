@@ -1,21 +1,19 @@
-diff --git a/arch/arm/boot/dts/Makefile b/arch/arm/boot/dts/Makefile
-index 7a72fc636a7a..fa7ad973969c 100644
---- a/arch/arm/boot/dts/Makefile
-+++ b/arch/arm/boot/dts/Makefile
-@@ -1267,6 +1267,8 @@ dtb-$(CONFIG_MACH_SUN8I) += \
- 	sun8i-h3-zeropi.dtb \
- 	sun8i-h3-emlid-neutis-n5h3-devboard.dtb \
- 	sun8i-r16-bananapi-m2m.dtb \
+--- a/arch/arm/boot/dts/allwinner/Makefile    2023-12-28 20:01:02.484659018 -0500
++++ b/arch/arm/boot/dts/allwinner/Makefile    2023-12-28 20:01:57.584659018 -0500
+@@ -248,6 +248,8 @@
+	sun8i-r16-nintendo-nes-classic.dtb \
+	sun8i-r16-nintendo-super-nes-classic.dtb \
+	sun8i-r16-parrot.dtb \
 +	sun8i-r16-clockworkpi-cpi3.dtb \
 +	sun8i-r16-clockworkpi-cpi3-hdmi.dtb \
- 	sun8i-r16-nintendo-nes-classic.dtb \
- 	sun8i-r16-nintendo-super-nes-classic.dtb \
- 	sun8i-r16-parrot.dtb \
-diff --git a/arch/arm/boot/dts/sun8i-r16-clockworkpi-cpi3-hdmi.dts b/arch/arm/boot/dts/sun8i-r16-clockworkpi-cpi3-hdmi.dts
+	sun8i-r40-bananapi-m2-ultra.dtb \
+	sun8i-r40-oka40i-c.dtb \
+	sun8i-s3-elimo-initium.dtb \
+diff --git a/arch/arm/boot/dts/allwinner/sun8i-r16-clockworkpi-cpi3-hdmi.dts b/arch/arm/boot/dts/allwinner/sun8i-r16-clockworkpi-cpi3-hdmi.dts
 new file mode 100644
 index 000000000000..e2c15df25b30
 --- /dev/null
-+++ b/arch/arm/boot/dts/sun8i-r16-clockworkpi-cpi3-hdmi.dts
++++ b/arch/arm/boot/dts/allwinner/sun8i-r16-clockworkpi-cpi3-hdmi.dts
 @@ -0,0 +1,380 @@
 +/*
 + * Copyright (c) 2018 Clockwork
@@ -397,11 +395,11 @@ index 000000000000..e2c15df25b30
 +	usb0_vbus_power-supply = <&usb_power_supply>;
 +	usb1_vbus-supply = <&reg_usb1_vbus>;
 +};
-diff --git a/arch/arm/boot/dts/sun8i-r16-clockworkpi-cpi3.dts b/arch/arm/boot/dts/sun8i-r16-clockworkpi-cpi3.dts
+diff --git a/arch/arm/boot/dts/allwinner/sun8i-r16-clockworkpi-cpi3.dts b/arch/arm/boot/dts/allwinner/sun8i-r16-clockworkpi-cpi3.dts
 new file mode 100644
 index 000000000000..a3e04b8adf8d
 --- /dev/null
-+++ b/arch/arm/boot/dts/sun8i-r16-clockworkpi-cpi3.dts
++++ b/arch/arm/boot/dts/allwinner/sun8i-r16-clockworkpi-cpi3.dts
 @@ -0,0 +1,399 @@
 +/*
 + * Copyright (c) 2018 Clockwork
